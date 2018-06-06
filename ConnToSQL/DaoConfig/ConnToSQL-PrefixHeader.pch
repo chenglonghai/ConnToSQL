@@ -1,0 +1,17 @@
+//
+//  ConnToSQL-PrefixHeader.pch
+//  ConnToSQL
+//
+//  Created by longhai on 2018/6/5.
+//  Copyright © 2018年 柳钰柯. All rights reserved.
+//
+
+#ifndef ConnToSQL_PrefixHeader_pch
+#define ConnToSQL_PrefixHeader_pch
+
+#import "DataSourceConfig.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ConnToSQL_PrefixHeader_pch */

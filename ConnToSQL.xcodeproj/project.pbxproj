@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E5716A7D4706E3518CC7FF8 /* libPods-ConnToSQL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4390A987BBEA9D83BF4FC8 /* libPods-ConnToSQL.a */; };
+		46AB72F81E1CC55E00447DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AB72F71E1CC55E00447DE2 /* main.m */; };
+		46AB72FB1E1CC55E00447DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AB72FA1E1CC55E00447DE2 /* AppDelegate.m */; };
+		46AB72FE1E1CC55E00447DE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AB72FD1E1CC55E00447DE2 /* ViewController.m */; };
+		46AB73011E1CC55E00447DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46AB72FF1E1CC55E00447DE2 /* Main.storyboard */; };
+		46AB73041E1CC55E00447DE2 /* ConnToSQL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46AB73021E1CC55E00447DE2 /* ConnToSQL.xcdatamodeld */; };
+		46AB73061E1CC55E00447DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46AB73051E1CC55E00447DE2 /* Assets.xcassets */; };
+		46AB73091E1CC55E00447DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46AB73071E1CC55E00447DE2 /* LaunchScreen.storyboard */; };
+		8FACD25C20C66A8C00588C2D /* DBConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FACD25B20C66A8C00588C2D /* DBConnect.m */; };
+		8FC0317720C6745F00B4B57D /* DBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0317620C6745F00B4B57D /* DBUser.m */; };
+		8FC0317A20C677A400B4B57D /* DBQueryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0317920C677A400B4B57D /* DBQueryContext.m */; };
+		8FC0317D20C67D4B00B4B57D /* CURDAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0317C20C67D4B00B4B57D /* CURDAction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46AB72F31E1CC55E00447DE2 /* ConnToSQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnToSQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46AB72F71E1CC55E00447DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46AB72F91E1CC55E00447DE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46AB72FA1E1CC55E00447DE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46AB72FC1E1CC55E00447DE2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46AB72FD1E1CC55E00447DE2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46AB73001E1CC55E00447DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46AB73031E1CC55E00447DE2 /* ConnToSQL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConnToSQL.xcdatamodel; sourceTree = "<group>"; };
+		46AB73051E1CC55E00447DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46AB73081E1CC55E00447DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46AB730A1E1CC55E00447DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CEA84BC28159E296BBAD595 /* Pods-ConnToSQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnToSQL.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConnToSQL/Pods-ConnToSQL.release.xcconfig"; sourceTree = "<group>"; };
+		8FACD25620C6691200588C2D /* DataSourceConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSourceConfig.h; sourceTree = "<group>"; };
+		8FACD25A20C66A8C00588C2D /* DBConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBConnect.h; sourceTree = "<group>"; };
+		8FACD25B20C66A8C00588C2D /* DBConnect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBConnect.m; sourceTree = "<group>"; };
+		8FC0317420C6737200B4B57D /* ConnToSQL-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConnToSQL-PrefixHeader.pch"; sourceTree = "<group>"; };
+		8FC0317520C6745F00B4B57D /* DBUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBUser.h; sourceTree = "<group>"; };
+		8FC0317620C6745F00B4B57D /* DBUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBUser.m; sourceTree = "<group>"; };
+		8FC0317820C677A400B4B57D /* DBQueryContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBQueryContext.h; sourceTree = "<group>"; };
+		8FC0317920C677A400B4B57D /* DBQueryContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBQueryContext.m; sourceTree = "<group>"; };
+		8FC0317B20C67D4B00B4B57D /* CURDAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CURDAction.h; sourceTree = "<group>"; };
+		8FC0317C20C67D4B00B4B57D /* CURDAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CURDAction.m; sourceTree = "<group>"; };
+		9E4390A987BBEA9D83BF4FC8 /* libPods-ConnToSQL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConnToSQL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50F1CE127EF49AB374F325C /* Pods-ConnToSQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnToSQL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConnToSQL/Pods-ConnToSQL.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46AB72F01E1CC55E00447DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5716A7D4706E3518CC7FF8 /* libPods-ConnToSQL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D89332F7FF600650E135111 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D50F1CE127EF49AB374F325C /* Pods-ConnToSQL.debug.xcconfig */,
+				7CEA84BC28159E296BBAD595 /* Pods-ConnToSQL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46AB72EA1E1CC55E00447DE2 = {
+			isa = PBXGroup;
+			children = (
+				46AB72F51E1CC55E00447DE2 /* ConnToSQL */,
+				46AB72F41E1CC55E00447DE2 /* Products */,
+				0D89332F7FF600650E135111 /* Pods */,
+				83D4F427B13B872E441F1F7C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46AB72F41E1CC55E00447DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46AB72F31E1CC55E00447DE2 /* ConnToSQL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46AB72F51E1CC55E00447DE2 /* ConnToSQL */ = {
+			isa = PBXGroup;
+			children = (
+				8FACD25520C668C200588C2D /* DaoConfig */,
+				8FACD25420C668C200588C2D /* DaoManger */,
+				46AB72F91E1CC55E00447DE2 /* AppDelegate.h */,
+				46AB72FA1E1CC55E00447DE2 /* AppDelegate.m */,
+				46AB72FC1E1CC55E00447DE2 /* ViewController.h */,
+				46AB72FD1E1CC55E00447DE2 /* ViewController.m */,
+				46AB72FF1E1CC55E00447DE2 /* Main.storyboard */,
+				46AB73051E1CC55E00447DE2 /* Assets.xcassets */,
+				46AB73071E1CC55E00447DE2 /* LaunchScreen.storyboard */,
+				46AB730A1E1CC55E00447DE2 /* Info.plist */,
+				46AB73021E1CC55E00447DE2 /* ConnToSQL.xcdatamodeld */,
+				46AB72F61E1CC55E00447DE2 /* Supporting Files */,
+			);
+			path = ConnToSQL;
+			sourceTree = "<group>";
+		};
+		46AB72F61E1CC55E00447DE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46AB72F71E1CC55E00447DE2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83D4F427B13B872E441F1F7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E4390A987BBEA9D83BF4FC8 /* libPods-ConnToSQL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FACD25420C668C200588C2D /* DaoManger */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0317B20C67D4B00B4B57D /* CURDAction.h */,
+				8FC0317C20C67D4B00B4B57D /* CURDAction.m */,
+			);
+			path = DaoManger;
+			sourceTree = "<group>";
+		};
+		8FACD25520C668C200588C2D /* DaoConfig */ = {
+			isa = PBXGroup;
+			children = (
+				8FACD25620C6691200588C2D /* DataSourceConfig.h */,
+				8FC0317520C6745F00B4B57D /* DBUser.h */,
+				8FC0317620C6745F00B4B57D /* DBUser.m */,
+				8FACD25A20C66A8C00588C2D /* DBConnect.h */,
+				8FACD25B20C66A8C00588C2D /* DBConnect.m */,
+				8FC0317820C677A400B4B57D /* DBQueryContext.h */,
+				8FC0317920C677A400B4B57D /* DBQueryContext.m */,
+				8FC0317420C6737200B4B57D /* ConnToSQL-PrefixHeader.pch */,
+			);
+			path = DaoConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46AB72F21E1CC55E00447DE2 /* ConnToSQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46AB730D1E1CC55E00447DE2 /* Build configuration list for PBXNativeTarget "ConnToSQL" */;
+			buildPhases = (
+				88F2DB0BA0A1AC1AFB4259CB /* [CP] Check Pods Manifest.lock */,
+				46AB72EF1E1CC55E00447DE2 /* Sources */,
+				46AB72F01E1CC55E00447DE2 /* Frameworks */,
+				46AB72F11E1CC55E00447DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConnToSQL;
+			productName = ConnToSQL;
+			productReference = 46AB72F31E1CC55E00447DE2 /* ConnToSQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46AB72EB1E1CC55E00447DE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "柳钰柯";
+				TargetAttributes = {
+					46AB72F21E1CC55E00447DE2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2B9W7978F;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 46AB72EE1E1CC55E00447DE2 /* Build configuration list for PBXProject "ConnToSQL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46AB72EA1E1CC55E00447DE2;
+			productRefGroup = 46AB72F41E1CC55E00447DE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46AB72F21E1CC55E00447DE2 /* ConnToSQL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46AB72F11E1CC55E00447DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46AB73091E1CC55E00447DE2 /* LaunchScreen.storyboard in Resources */,
+				46AB73061E1CC55E00447DE2 /* Assets.xcassets in Resources */,
+				46AB73011E1CC55E00447DE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88F2DB0BA0A1AC1AFB4259CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConnToSQL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46AB72EF1E1CC55E00447DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46AB72FE1E1CC55E00447DE2 /* ViewController.m in Sources */,
+				8FC0317A20C677A400B4B57D /* DBQueryContext.m in Sources */,
+				46AB72FB1E1CC55E00447DE2 /* AppDelegate.m in Sources */,
+				8FC0317D20C67D4B00B4B57D /* CURDAction.m in Sources */,
+				46AB72F81E1CC55E00447DE2 /* main.m in Sources */,
+				46AB73041E1CC55E00447DE2 /* ConnToSQL.xcdatamodeld in Sources */,
+				8FC0317720C6745F00B4B57D /* DBUser.m in Sources */,
+				8FACD25C20C66A8C00588C2D /* DBConnect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46AB72FF1E1CC55E00447DE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46AB73001E1CC55E00447DE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46AB73071E1CC55E00447DE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46AB73081E1CC55E00447DE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46AB730B1E1CC55E00447DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46AB730C1E1CC55E00447DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46AB730E1E1CC55E00447DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50F1CE127EF49AB374F325C /* Pods-ConnToSQL.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2B9W7978F;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "/Users/longhai/Downloads/ConnToSQL/ConnToSQL/DaoConfig/ConnToSQL-PrefixHeader.pch";
+				INFOPLIST_FILE = ConnToSQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Larrycal.ConnToSQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46AB730F1E1CC55E00447DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CEA84BC28159E296BBAD595 /* Pods-ConnToSQL.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2B9W7978F;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "/Users/longhai/Downloads/ConnToSQL/ConnToSQL/DaoConfig/ConnToSQL-PrefixHeader.pch";
+				INFOPLIST_FILE = ConnToSQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Larrycal.ConnToSQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46AB72EE1E1CC55E00447DE2 /* Build configuration list for PBXProject "ConnToSQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46AB730B1E1CC55E00447DE2 /* Debug */,
+				46AB730C1E1CC55E00447DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46AB730D1E1CC55E00447DE2 /* Build configuration list for PBXNativeTarget "ConnToSQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46AB730E1E1CC55E00447DE2 /* Debug */,
+				46AB730F1E1CC55E00447DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46AB73021E1CC55E00447DE2 /* ConnToSQL.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46AB73031E1CC55E00447DE2 /* ConnToSQL.xcdatamodel */,
+			);
+			currentVersion = 46AB73031E1CC55E00447DE2 /* ConnToSQL.xcdatamodel */;
+			path = ConnToSQL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46AB72EB1E1CC55E00447DE2 /* Project object */;
+}
