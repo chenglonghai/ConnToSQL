@@ -16,7 +16,6 @@
 #define DB_SERVER_NAME @"192.168.2.238"
 #define DB_PORT 3306
 #define DB_SOCKET nil
-
 #import <OHMySQL.h>
 
 //核心代码参考

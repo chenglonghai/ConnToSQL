@@ -40,11 +40,11 @@ static DBQueryContext *_dbQueryContext;
 {
    BOOL connected =   [self connectDB];
     if (connected == YES) {
-        NSLog(@"连接数据库成功");
+        NSLog(@"连接数据库成功~~");
             return [DBQueryContext shareDBQueryContext];
     }else
     {
-            NSLog(@"连接数据库失败");
+        NSLog(@"连接数据库失败~~");
           return nil;
     }
     
